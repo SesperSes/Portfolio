@@ -19,15 +19,15 @@ nav{
     height: 10vh;
     position: sticky;
 }
-.nav-container{
+.navegacao{
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.nav-container .logo span{
-    font-size: 3rem;
+.navegacao .logo span{
+    font-size: 2rem;
     font-weight: bold;
     color: var(--vermelho);
     text-shadow: 0 0 10px var(--vermelho);
@@ -41,10 +41,10 @@ nav{
     font-size: clamp(2.5rem,0.5rem + 5vw, 3rem);
     display: none;
 }
-.nav-container .links{
+.navegacao .links{
     display: flex;
 }
-.nav-container .links a{
+.navegacao .links a{
     font-size: 1.2rem;
     color: white;
     margin: 0 20px;
@@ -52,11 +52,11 @@ nav{
     font-weight: 550;
     transition: 0.3s linear;
 }
-.nav-container .links a:hover{
+.navegacao .links a:hover{
     color: var(--vermelho);
     border-bottom: 2px solid var(--vermelho);
 }
-.dropdown{
+.opcoes{
     z-index: 10;
     position: absolute;
     top: 0;
@@ -67,7 +67,7 @@ nav{
     box-shadow: 0 0 20px black;
     transition: 0.2s linear;
 }
-.dropdown a{
+.opcoes a{
     display: flex;
     color: white;
     font-size: 1.3rem;
@@ -77,14 +77,14 @@ nav{
     align-items: center;
     transition: 0.3s linear;
 }
-.dropdown a:hover{
+.opcoes a:hover{
     background-color: var(--vermelho);
 }
 section{
     width: 100%;
     height: 90vh;
 }
-.main-container{
+.fundo-principal{
     width: 100%;
     height: 100%;
     display: flex;
@@ -92,35 +92,35 @@ section{
     align-items: center;
     
 }
-.main-container .image{
+.fundo-principal .image{
     width: 450px;
     height: 80vh;
 }
-.main-container .image img{
+.fundo-principal .image img{
     max-width: 100%;
-    border-radius: 50px;
-    box-shadow: 0 0 30px 5px var(--vermelho);
+    border-radius: 50%;
+    box-shadow: 0 0 10px 5px var(--vermelho);
 }
 
-.main-container .content{
+.fundo-principal .caixa-de-texto{
     color: white;
     width: 40%;
     min-height: 100px;
 }
-.content h1{
+.caixa-de-texto h1{
     font-size: clamp(2rem, 1rem + 5vw,1.9rem);
 }
-.content h1 span{
+.caixa-de-texto h1 span{
     font-weight: 700;
     text-shadow: 0 0 10px var(--vermelho);
     color: var(--vermelho);
 }
-.typing-text{
+.texto{
     font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
     font-weight: 700;
     position: relative;
 }
-.typing-text span:before{
+.texto span:before{
     content: "";
     color: var(--vermelho);
     animation: words 20s infinite;
@@ -133,7 +133,7 @@ section{
         content: "Desenvolvedor";
     }
 }
-.content p{
+.caixa-de-texto p{
     font-size: clamp(0.4rem,0.2rem + 9vw,1rem);
     margin: 10px 0;
 }
@@ -157,51 +157,31 @@ section{
     background-color: var(--vermelho);
     color: white;
 }
-.content button{
-    width: 50%;
-    height: 6vh;
-    margin: 30px 0;
-    background-color: var(--vermelho);
-    color: white;
-    border: none;
-    outline: none;
-    font-size: 120%;
-    font-weight: 700;
-    border-radius: 5px;
-    transition: 0.2s linear;
-}
-.content button:hover{
-    scale: 1.1;
-    color: var(--vermelho);
-    border: 2px solid var(--vermelho);
-    background-color: transparent;
-    box-shadow: 0 0 40px 5px var(--vermelho);
-}
 @media (max-width:885px){
     nav .logo{
         top: 16px;
         left: 15px;
         font-size: 1.5rem;
     }
-    .main-container{
+    .fundo-principal{
         display: flex;
         flex-direction: column;
     }
-    .nav-container .links{
+    .navegacao .links{
         display: none;
     }
     .hamburg,.cancel{
         display: block;
     }
-    .main-container .content{
+    .fundo-principal .caixa-de-texto{
         width: 80%;
         margin-top: 40px;
     }
-    .main-container .image{
+    .fundo-principal .image{
         width: 300px;
         height: 35vh;
     }
-    .typing-text{
+    .texto{
         font-size: 2rem;
     }
 }

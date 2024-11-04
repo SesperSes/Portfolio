@@ -12,7 +12,7 @@
 </head>
 <body>
     <nav>
-        <div class="nav-container">
+        <div class="navegacao">
             <div class="logo">
                 <span>Lucas Sesper</span>
             </div>
@@ -24,7 +24,7 @@
             </div>
         </div>
         <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
-        <div class="dropdown">
+        <div class="opcoes">
             <a href="">Inicio</a>
             <a href="">Sobre</a>
             <a href="">Conhecimentos</a>
@@ -33,35 +33,32 @@
         </div>
     </nav>
     <section>
-        <div class="main-container">
+        <div class="fundo-principal">
             <div class="image">
-                <img src="style/1000057643.jpg" alt="Image">
+                <img src="img/1000057643.jpg" alt="Image">
             </div>
-            <div class="content">
+            <div class="caixa-de-texto">
                 <h1>Olá, eu sou<span> Sesper</span></h1>
-                <h2 class="typing-text">Eu sou <span></span></h2>
-                <p>Estou iniciando no mundo de desenvolvimento de sistemas, tenho conhecimento em algumas linguagens da programção.
-                     Pretendo aprender coisas novas como linguagens, desenvolvimento de jogos entre outras coisas.
-                     Tenho um conhecimento básico em inglês.</p>
+                <h2 class="texto">Eu sou <span></span></h2>
+                <p>Estou iniciando no mundo de Desenvolvimento de Sistemas, tenho conhecimento em Python.
+                     Estou aprendendo PHP e JavaScript e também Pretendo participar da area de Desenvolvimento de Jogos entre outras coisas.
+                    </p>
                 <div class="social-links">
                     <a href=""><i class="fa-brands fa-github"></i></a>
                     <a href=""><i class="fa-brands fa-linkedin"></i></a>
                     <a href=""><i class="fa-brands fa-x-twitter"></i></a>
                     <a href=""><i class="fa-brands fa-youtube"></i></a>
                 </div>
-                <div class="btn">
-                    <button>Download Curiculo</button>
-                </div>
             </div>
         </div>
     </section>
     <script>
         function hamburg(){
-            const navbar = document.querySelector(".dropdown")
+            const navbar = document.querySelector(".opcoes")
             navbar.style.transform = "translateY(0px)"
         }
         function cancel(){
-            const navbar = document.querySelector(".dropdown")
+            const navbar = document.querySelector(".opcoes")
             navbar.style.transform = "translateY(-400px)"
         }
     </script>
